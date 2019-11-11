@@ -1,6 +1,4 @@
 import java.io.*;
-import  java.net.*;
-import java.awt.*;
 class Playing_Hand_Cricket_Against_Computer
 
 {
