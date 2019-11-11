@@ -19,22 +19,7 @@ class Playing_Hand_Cricket_Against_Computer
         int c; // used in for loops to create a specific design;
         int choice; // used to decide whether the game needs to be ended or restarted;
         int infinity=1; // used to keep the game running until the player decides to end the game
-
-        while(infinity>0)
-        {
-            name=" ";
-            aa=0;
-            ii=0;
-            bb=0;
-            rr=0;
-            cheat=0;
-            score1=0;
-            score2=0;
-            c=0;
-            choice=0;
-            infinity=1;
-
-            System.out.println("| WELCOME TO THE HAND CRICKET GAME |");
+        System.out.println("| WELCOME TO THE HAND CRICKET GAME |");
             System.out.println("");
             System.out.print("Enter Your Name: \n");
             name=br.readLine();
@@ -69,6 +54,20 @@ class Playing_Hand_Cricket_Against_Computer
             System.out.println(".");
             System.out.println("====================================");
 
+        while(infinity>0)
+        {
+            name=" ";
+            aa=0;
+            ii=0;
+            bb=0;
+            rr=0;
+            cheat=0;
+            score1=0;
+            score2=0;
+            c=0;
+            choice=0;
+            infinity=1;
+
             System.out.println("YOU ARE BATTING:");
 
             System.out.println("====================================");
@@ -89,7 +88,7 @@ class Playing_Hand_Cricket_Against_Computer
             if(bb==aa)
             {
                 System.out.println(" ");
-                System.out.println("You're out and its' Computer Turns!");
+                System.out.println("You are out and now it is Computer's Turn!");
                 System.out.println(" ");
                 System.out.println("################");
                 System.out.println("YOUR FINAL SCORE = "+score1);
