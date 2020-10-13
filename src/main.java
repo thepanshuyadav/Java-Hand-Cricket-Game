@@ -18,7 +18,7 @@ class Playing_Hand_Cricket_Against_Computer
         int score2; // to store the latest runs scored by the computer;
         int c; // used in for loops to create a specific design;
         int choice; // used to decide whether the game needs to be ended or restarted;
-        int infinity=1; // used to keep the game running until the player decides to end the game
+        int inf=1; // used to keep the game running until the player decides to end the game
         System.out.println("| WELCOME TO THE HAND CRICKET GAME |");
             System.out.println("");
             System.out.print("Enter Your Name: \n");
@@ -53,7 +53,7 @@ class Playing_Hand_Cricket_Against_Computer
             System.out.println(".");
             System.out.println("====================================");
 
-        while(infinity>0)
+        while(inf>0)
         {
             name=" ";
             aa=0;
@@ -65,11 +65,10 @@ class Playing_Hand_Cricket_Against_Computer
             score2=0;
             c=0;
             choice=0;
-            infinity=1;
+            inf=1;
 
             System.out.println("YOU ARE BATTING:");
 
-            System.out.println("====================================");
             for(ii=1;ii>0;ii++)
             {
             System.out.println("");
@@ -86,12 +85,8 @@ class Playing_Hand_Cricket_Against_Computer
 
             if(bb==aa)
             {
-                System.out.println(" ");
                 System.out.println("You are out and now it is Computer's Turn!");
-                System.out.println(" ");
-                System.out.println("################");
                 System.out.println("YOUR FINAL SCORE = "+score1);
-                System.out.println("################");
                 System.out.println(" ");
                 break;
             }
@@ -101,15 +96,12 @@ class Playing_Hand_Cricket_Against_Computer
                 score1=score1+bb;
             } else if(bb>10||bb<=0)
             {
-                System.out.println("====================================");
                 System.out.println("You have either tried to cheat or entered a wrong input. Game Over!");
                 cheat++;
                 break;
             }
 
-            System.out.println("Your Current Score Is "+score1);
-            System.out.println("");
-            System.out.println("**********");
+            System.out.println("Your Current Score Is "+score1);;
         }
 
             for(c=0;c<=2;c++) {
@@ -224,8 +216,6 @@ class Playing_Hand_Cricket_Against_Computer
                 }
 
             }
-
-            System.out.println("");
             System.out.println("Enter 1 To Play This Game Again.");
             System.out.println();
             System.out.println("Enter 0 Or Any Other Number To Quit.");
