@@ -23,7 +23,6 @@ class Playing_Hand_Cricket_Against_Computer
             System.out.println("");
             System.out.print("Enter Your Name: \n");
             name=br.readLine();
-            System.out.println("====================================");
 
             System.out.println("Hello "+name+",");
             System.out.println(".");
@@ -197,7 +196,6 @@ class Playing_Hand_Cricket_Against_Computer
                 break;
             }
 
-                System.out.println("====================================");
             }
 
             for(ii=0;ii<1;ii++) { if(cheat>0)
@@ -206,10 +204,8 @@ class Playing_Hand_Cricket_Against_Computer
             }
 
                 System.out.println(" ");
-                System.out.println("################");
                 System.out.println("YOUR FINAL SCORE = "+score1);
                 System.out.println("COMPUTER'S FINAL SCORE = "+score2);
-                System.out.println("################");
                 System.out.println(" ");
 
                 if((score1)>(score2))
@@ -224,18 +220,16 @@ class Playing_Hand_Cricket_Against_Computer
 
                 else
                 {
-                    System.out.println("It's a Tie..! :(");
+                    System.out.println("Tie");
                 }
 
             }
-                System.out.println("====================================");
 
             System.out.println("");
             System.out.println("Enter 1 To Play This Game Again.");
             System.out.println();
             System.out.println("Enter 0 Or Any Other Number To Quit.");
             choice=Integer.parseInt(br.readLine());
-            System.out.println("");
 
             if(choice==1)
             {
@@ -245,7 +239,7 @@ class Playing_Hand_Cricket_Against_Computer
             else
             {
                 System.out.print('\f');
-                System.out.println("Good Bye!");
+                System.out.println("Thank You");
                 break;
             }
 
